@@ -141,7 +141,7 @@ const styles = ({ colors }) => StyleSheet.create({
         position: 'absolute',
         width: 1000,
         height: 1000,
-        zIndex: 0,
+        zIndex: 1,
       },
     }),
   },
