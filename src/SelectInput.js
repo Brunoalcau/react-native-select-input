@@ -198,15 +198,16 @@ class SelectInput extends Component {
         </View>
       );
     }
-
+    const styled = [
+      this.styles.value,
+      disabled && this.styles.valueDisabled,
+      valueStyle,
+      {color: Platform.OS === 'android' ? 'transparent' : '#000'}
+    ];
     return (
       <Text
         {...valueProps}
-        style={[
-          this.styles.value,
-          disabled && this.styles.valueDisabled,
-          valueStyle,
-        ]}
+        style={styled}
       >
         {this.getValue()}
       </Text>

@@ -140,8 +140,9 @@ const styles = ({ colors }) => StyleSheet.create({
         // (https://github.com/facebook/react-native/issues/7817#issuecomment-264851951)
         position: 'absolute',
         width: 1000,
-        height: 1000,
         zIndex: 1,
+        left: 0.5,
+        fontSize: 14
       },
     }),
   },
